@@ -1,0 +1,53 @@
+
+
+.scroll {
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    height: 15px;
+    background-color: coral;
+    transition: width 0.25s ease-in-out;
+
+}
+.lipsum{
+    text-align:justify;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+h1 { 
+    font-family: 'Lato', sans-serif; 
+    font-size: 45px; 
+    font-weight: 500; 
+    line-height: 58px; 
+    margin: 0 0 58px; 
+    margin-left: auto;
+}
+
+p { 
+    color: #adb7bd; 
+    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-size: 16px; 
+    line-height: 26px; 
+    text-indent: 30px; margin: 0; 
+}
+
+.date { 
+    background:coral; 
+    color: #ffffff; 
+    display: inline-block; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 12px; font-weight: bold; 
+    line-height: 12px; 
+    letter-spacing: 1px; 
+    margin: 0 0 30px; 
+    padding: 10px 15px 8px; 
+    text-transform: uppercase; 
+    }
+
+.focus {
+    color: coral;
+}

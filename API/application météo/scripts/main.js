@@ -1,6 +1,6 @@
 import tabJoursEnOrdre from "./Utilitaire/gestionTemps.js";
+import APIKEY from "./Utilitaire/apikey.js";
 
-const CLEAPI = "6acfecfe6b249e096cc8cd78b2481b56";
 let resultatsAPI;
 
 const temps = document.querySelector('.temps');
@@ -26,7 +26,7 @@ if(navigator.geolocation){
 
 
 function AppelAPI (long, lat){
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=${CLEAPI}`)
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=${APIKEY}`)
     .then ((response) => {
         return response.json();
     })

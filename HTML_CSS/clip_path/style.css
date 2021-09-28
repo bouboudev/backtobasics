@@ -1,0 +1,51 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 100vh;
+    /* Formule magique : */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3498db ;
+    color: white;
+    padding-top: 50px;
+}
+
+img {
+    object-fit: cover;
+    height: 600px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.b1 {
+    background-color: #3498db ;
+}
+
+.b2 {
+    background-color: #e74c3c ;
+}
+
+.b3 {
+    background-color: #2ecc71 ;
+}
+
+.b4 {
+    background-color: #9b59b6 ;
+}
+
+.b5 {
+    background-color: #f1c40f ;
+}

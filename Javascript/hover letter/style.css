@@ -1,0 +1,20 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+}
+
+h1 span{
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+    transition: all 0.25s ease-in-out;
+    
+}
+
+h1 span.hover {
+    color: #ffc048;
+    transform: scale(1.5);
+}

@@ -1,0 +1,77 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'mandaloreregular';
+  src: url('font/mandalore-webfont.woff2') format('woff2'),
+    url('font/mandalore-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  height: 100vh;
+  background: #1b1b1b;
+  cursor: none;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  width: 600px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  font-family: 'mandaloreregular';
+  font-size: 110px;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+}
+
+.cursor {
+  box-sizing: content-box;
+  z-index: 1000;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 87% 13% 45% 55% / 62% 0% 100% 38%;
+  border: 2px solid white;
+  animation: borderAnim 4s ease-in-out infinite alternate;
+  pointer-events: none;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hovered {
+  background-size: cover;
+  transform: scale(5);
+}
+
+
+@keyframes borderAnim {
+
+  0% {
+
+    border-radius: 32% 68% 27% 73% / 66% 59% 41% 34%;
+
+  }
+
+  100% {
+    border-radius: 59% 41% 37% 63% / 54% 53% 47% 46%;
+
+  }
+
+}

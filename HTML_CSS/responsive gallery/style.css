@@ -1,0 +1,44 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(197, 197, 197);
+}
+
+h1 {
+  color: rgb(59, 59, 59);
+  text-align: center;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.grid {
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  width: 250px;
+  height: 150px;
+  background: no-repeat url(https://images4.alphacoders.com/592/592367.jpg);
+  background-size: 120%;
+  transition: all 1s ease;
+}
+
+.grid-item:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  z-index: 999;
+}

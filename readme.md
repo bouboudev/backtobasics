@@ -9,7 +9,7 @@ Benjamin code conseil une serie d'exercice afin d'augmenter ses chances d'être 
 C'est pourquoi j'ai créé ce repo GitHub.
 
 
-[![Watch the video](https://img.youtube.com/vi/v=XJYRhQUjS6I/maxresdefault.jpg)](https://www.youtube.com/watch?v=XJYRhQUjS6I)
+[![Watch the video](https://img.youtube.com/vi/XJYRhQUjS6I/0.jpg)](https://www.youtube.com/watch?v=XJYRhQUjS6I)
 
 
 

@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 70px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title,
+.title2,
+.title3 {
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 1;
+  -webkit-text-stroke: 2px white;
+  opacity: 0.9;
+  color: transparent;
+  text-align: center;
+  background-clip: text;
+  /* à rajouter pour les navigateurs */
+  -webkit-background-clip: text;
+
+  transition: background-position ease-out 0.4s;
+  background-size: 1% 200%;
+}
+
+.title,
+.title3 {
+  background-image: linear-gradient(to bottom, transparent 50%, black 50%);
+}
+
+.title2 {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgb(255, 255, 255) 50%
+  );
+}
+
+.title:hover,
+.title3:hover {
+  background-position: 0 -100%;
+  -webkit-text-stroke: 2px black;
+  transition: ease-out 0.4s;
+}
+
+.title2:hover {
+  background-position: 0 -100%;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  transition: ease-out 0.4s;
+}

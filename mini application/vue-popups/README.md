@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### lien SANDBOX
+https://codesandbox.io/s/vue-modal-tmyhs

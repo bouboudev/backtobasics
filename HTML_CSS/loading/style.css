@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat";
+  background-color: #222;
+}
+
+.preloader {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-text {
+  color: #333333;
+  font-size: 102px;
+  font-weight: 800;
+  background-image: linear-gradient(#333 50%, #575fcf 50%, #3c40c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: loader 10s linear infinite;
+}
+
+.bar {
+  display: block;
+  width: 50%;
+  height: 10px;
+  background-image: linear-gradient(to right, #333 50%, #575fcf 50%, #3c40c6);
+  background-size: 200% 200%;
+  animation: loader 10s linear infinite;
+  border-radius: 15px;
+}
+@keyframes loader {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: -100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

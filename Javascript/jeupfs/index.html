@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jeu Pierre Feuille ou Ciseau</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Joueur</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Ordinateur</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>Pierre, Feuille ou Ciseau ?</h1>
+        <button>C'est parti !</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner"> Choisie une option</h2>
+        <div class="hands">
+          <img class="player-hand" src="./assets/pierre.png" alt="" />
+          <img class="computer-hand" src="./assets/pierre.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="pierre">Pierre</button>
+          <button class="feuille">Feuille</button>
+          <button class="ciseau">Ciseau</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

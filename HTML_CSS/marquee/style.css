@@ -1,0 +1,41 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.marquee-container {
+    display: flex;
+    align-items: center;
+    background: #131313;
+    overflow: hidden;
+}
+
+
+.marquee{ 
+    font-size: 100px;
+    line-height: 1.3;
+    font-family: sans-serif;
+    padding: 24px 0;
+    color: #f1f1f1;
+    white-space: nowrap;
+    animation: marquee 10.5s infinite linear;
+
+}
+
+.marquee:after{
+content: "- Bouzid - Parisien - 28 ans - Développeur Full Stack";
+
+}
+
+
+@keyframes marquee {
+
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+    
+}

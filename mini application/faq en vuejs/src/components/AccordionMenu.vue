@@ -57,7 +57,7 @@
         connexion sécurisée sur Internet, afin d’empêcher toute tentative de
         fraude lors d’une transaction bancaire. La sécurisation se fait par un
         cryptage des données envoyées par le navigateur au serveur.
-      </p>
+      </p> 
     </div>
     <div class="accordion-item">
       <h2 class="header">L'hypertexte c'est quoi ?</h2>

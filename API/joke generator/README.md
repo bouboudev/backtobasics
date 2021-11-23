@@ -12,10 +12,10 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Profil Card</h>
+  <h2 align="center">Joke generator</h>
 
   <p align="center">
-  it's a user profile wall !
+   this is a Joke generator !
     <br />
    
   </p>
@@ -50,7 +50,8 @@
 <img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
 <br />
 <br />
-The goal of the project was to make an api call by recovering the data (user profile) and display them on the front.
+
+The goal of the project was to make an API call while retrieving the data and to display the jokes in front
 
 
 

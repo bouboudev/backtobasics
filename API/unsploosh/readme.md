@@ -11,10 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Unsploosh</h3>
 
   <p align="center">
@@ -37,7 +34,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -51,7 +47,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-the goal of the project was to clone the unsplash site by allowing the user the ability to search and upload an image.
+<img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
+<br />
+<br />
+The goal of the project was to clone the unsplash site by allowing the user the ability to search and upload an image.
 
 
 
@@ -74,13 +73,6 @@ the goal of the project was to clone the unsplash site by allowing the user the 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-### Prerequisites
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -105,5 +97,7 @@ the goal of the project was to clone the unsplash site by allowing the user the 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 

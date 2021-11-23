@@ -47,8 +47,8 @@
 
 <!-- LICENSE -->
 ## License
+<h3> Distributed under the MIT License. See  <a href="https://github.com/bouboudev/backtobasics/blob/master/LICENSE.txt"> LICENSE.txt </a>for more information.</h3>
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

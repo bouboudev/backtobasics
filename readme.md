@@ -6,14 +6,14 @@
 
 <br />
 
-## Back to the basics c'est quoi ?
+## Back to the basics what's this ?
 
-Benjamin code conseil une serie d'exercices et de projets afin d'augmenter ses chances d'être recruté.
+Benjamin code advises on a series of exercises and projects in order to increase his chances of being recruited.
 
-C'est pourquoi j'ai créé ce repo GitHub.
+That's why I created this GitHub repository.
 
 
-## voir la vidéo :
+## watch the video :
 
 [![Watch the video](https://img.youtube.com/vi/XJYRhQUjS6I/0.jpg)](https://www.youtube.com/watch?v=XJYRhQUjS6I)
 

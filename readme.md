@@ -24,25 +24,12 @@
 <br/>
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="https://github.com/bouboudev/backtobasics/tree/master/API">API</a>
-    </li>
-    <li>
-      <a href="https://github.com/bouboudev/backtobasics/tree/master/HTML_CSS">HTML_CSS</a>
-    </li>
-    <li>
-      <a href="https://github.com/bouboudev/backtobasics/tree/master/Javascript">Javascript</a>
-    </li>
-    <li>
-      <a href="https://github.com/bouboudev/backtobasics/tree/master/mini%20application">Mini Application</a>
-    </li>
-   
+## Table of Contents
+* [API](https://github.com/bouboudev/backtobasics/tree/master/API)
+* [HTML CSS](https://github.com/bouboudev/backtobasics/tree/master/HTML_CSS)
+* [JAVASCRIPT](https://github.com/bouboudev/backtobasics/tree/master/Javascript)
+* [MINI APPLICATION](https://github.com/bouboudev/backtobasics/tree/master/mini%20application)
 
-  </ol>
-</details>
 <hr>
 
 <!-- GETTING STARTED -->

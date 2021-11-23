@@ -47,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
+<img alt="screenshot" width="800px" src="images/screenshot.png" align="center"/>
 <br />
 <br />
 The goal of the project was to make an API call by retrieving the weather data and to display them on the front.

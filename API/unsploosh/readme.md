@@ -12,7 +12,7 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Unsploosh</h2>
+  <h2 align="center">Unsploosh</h>
 
   <p align="center">
    this is the unsplash clone !

@@ -1,28 +1,69 @@
+<div id="top"></div>
 
 <p align="center"> 
   <img  alt="backtobasics" width="700pxpx" src="https://github.com/bouboudev/backtobasics/blob/master/BACKTOBASICS.png?raw=true" />
 </p>
 
-
-<br />
-
-## Back to the basics what's this ?
-
-Benjamin code advises on a series of exercises and projects in order to increase his chances of being recruited.
-
-That's why I created this GitHub repository.
+[![Website](https://img.shields.io/badge/My%20Website%20-bouzid--krita.com-&?style=for-the-badge&logo=google&color=black)](https://bouzid-krita.com)
+[![Website](https://img.shields.io/badge/Follow%20%40BOUBOUDEV--&?style=for-the-badge&logo=codepen)](https://codepen.io/bouboudev)
+[![Twitter Follow](https://img.shields.io/twitter/follow/boubou_dev?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fboubou_dev&screen_name=boubou_dev)
+[![LinkedIn](https://img.shields.io/twitter/url?color=blue&label=Follow%20%40bouzidkrita&logo=linkedin&logoColor=blue&style=for-the-badge&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fbouzidkrita%2F)](https://www.linkedin.com/in/bouzidkrita/)
 
 
-## watch the video :
+<br/>
+ 
+## - Who am I ?
+<h3> <a href="https://github.com/bouboudev">More info here</a></h3>
 
-[![Watch the video](https://img.youtube.com/vi/XJYRhQUjS6I/0.jpg)](https://www.youtube.com/watch?v=XJYRhQUjS6I)
+## - Back to the basics what's this ?
 
-<br />
+### Faced with recruiters when leaving school, I was refused for several positions for my lack of experience. I decided to show and prove my skills with projects.
+
+### That's why I created this GitHub repository.
+
+<br/>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="https://github.com/bouboudev/backtobasics/tree/master/API">API</a>
+    </li>
+    <li>
+      <a href="https://github.com/bouboudev/backtobasics/tree/master/HTML_CSS">HTML_CSS</a>
+    </li>
+    <li>
+      <a href="https://github.com/bouboudev/backtobasics/tree/master/Javascript">Javascript</a>
+    </li>
+    <li>
+      <a href="https://github.com/bouboudev/backtobasics/tree/master/mini%20application">Mini Application</a>
+    </li>
+   
+
+  </ol>
+</details>
 <hr>
 
+<!-- GETTING STARTED -->
+## Getting Started
 
-[![Website](https://img.shields.io/website?label=bouzid-krita.com&style=for-the-badge&url=https%3A%2F%2Fbouzid-krita.com)](https://bouzid-krita.com)
-[![Twitter Follow](https://img.shields.io/twitter/follow/boubou_dev?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fboubou_dev&screen_name=boubou_dev)
+### Installation
+
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/bouboudev/backtobasics.git
+   ```
+2. Have fun
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 [website]: https://bouzid-krita.com

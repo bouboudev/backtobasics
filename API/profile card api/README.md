@@ -15,7 +15,7 @@
   <h2 align="center">Profil Card</h>
 
   <p align="center">
-   this is the unsplash clone !
+  it's a user profile wall !
     <br />
    
   </p>

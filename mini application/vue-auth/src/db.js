@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 
 const config = {
 
-  apiKey: process.env.CONFIGAPIKEY,
+  apiKey: "process.env.CONFIGAPIKEY",
   authDomain: "vue-auth-bk.firebaseapp.com",
   projectId: "vue-auth-bk",
   storageBucket: "vue-auth-bk.appspot.com",

@@ -1,15 +1,7 @@
 <div id="top"></div>
 
-<p>
-ʙᴏᴜʙᴏᴜᴅᴇᴠ </p>
-<p>
-  ____    _    ____ _  _______ ___  ____    _    ____ ___ ____ ____  
- | __ )  / \  / ___| |/ /_   _/ _ \| __ )  / \  / ___|_ _/ ___/ ___| 
- |  _ \ / _ \| |   | ' /  | || | | |  _ \ / _ \ \___ \| | |   \___ \ 
- | |_) / ___ \ |___| . \  | || |_| | |_) / ___ \ ___) | | |___ ___) |
- |____/_/   \_\____|_|\_\ |_| \___/|____/_/   \_\____/___\____|____/ 
-                                                                     
-</p>
+ #  BACKTOBASICS
+
 
 [![Website](https://img.shields.io/badge/My%20Website%20-bouzid--krita.com-&?style=for-the-badge&logo=google&color=black)](https://bouzid-krita.com)
 [![Website](https://img.shields.io/badge/Follow%20%40BOUBOUDEV--&?style=for-the-badge&logo=codepen)](https://codepen.io/bouboudev)

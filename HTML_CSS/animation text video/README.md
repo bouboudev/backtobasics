@@ -50,7 +50,7 @@
 <img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
 <br />
 <br />
-The goal of the project was to animate my first name.
+The goal of the project was to animate a text with a video.
 
 
 

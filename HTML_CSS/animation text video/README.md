@@ -15,7 +15,7 @@
   <h2 align="center">Animation text video</h>
 
   <p align="center">
-   this is an Animation in Svg !
+   this is an Animation text video !
     <br />
    
   </p>

@@ -12,7 +12,7 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Animation Svg</h>
+  <h2 align="center">Animation text video</h>
 
   <p align="center">
    this is an Animation in Svg !

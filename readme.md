@@ -27,6 +27,7 @@
 * [API](https://github.com/bouboudev/backtobasics/tree/master/API)
 * [HTML CSS](https://github.com/bouboudev/backtobasics/tree/master/HTML_CSS)
 * [JAVASCRIPT](https://github.com/bouboudev/backtobasics/tree/master/Javascript)
+* [WEBSITE](https://github.com/bouboudev/backtobasics/tree/master/WEBSITE)
 * [MINI APPLICATION](https://github.com/bouboudev/backtobasics/tree/master/mini%20application)
 
 <hr>

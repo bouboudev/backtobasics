@@ -12,10 +12,10 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Pressed Button</h>
+  <h2 align="center">Clip Path</h>
 
   <p align="center">
-   this is a button pressed!
+   this is a gallery with clip path!
     <br />
    
   </p>

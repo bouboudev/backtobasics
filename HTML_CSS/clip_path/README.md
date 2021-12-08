@@ -50,7 +50,7 @@
 <img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
 <br />
 <br />
-The goal of the project was to create pressed buttons.
+The goal of the project was to create a gallery with clip path.
 
 
 

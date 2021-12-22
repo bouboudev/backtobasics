@@ -12,10 +12,10 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Clip Path</h>
+  <h2 align="center">Flip card</h>
 
   <p align="center">
-   this is a gallery with clip path!
+   this is a Flip card!
     <br />
    
   </p>

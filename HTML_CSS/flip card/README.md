@@ -50,7 +50,9 @@
 <img alt="Night Coding" width="800px" src="images/screenshot.png" align="center"/>
 <br />
 <br />
-The goal of the project was to create a gallery with clip path.
+
+
+The goal of the project was to create a card that spins when the mouse hovers over it.
 
 
 

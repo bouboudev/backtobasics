@@ -100,9 +100,6 @@ npm run lint
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### Link SANDBOX :
-
-https://s8ow0.csb.app
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -1,78 +1,93 @@
 <template>
   <div class="home">
-  <h1>
-    Mes recettes
-  </h1>
-  <button @click="togglePopup"> Ajouter une nouvelle recette</button>
-  <div class="recipes">
-    <div class="card" v-for='recipe in $store.state.recipes' :key='recipe.slug'>
-      <h2>{{recipe.title}}</h2>
-      <p>{{recipe.description}}</p>
-      <router-link :to="`/recipte/${recipe.slug}`">
-        <button>Voir la recette</button>
-      </router-link>
+    <h1>Mes recettes</h1>
+    <button @click="togglePopup">Ajouter une nouvelle recette</button>
+    <div class="recipes">
+      <div
+        class="card"
+        v-for="recipe in $store.state.recipes"
+        :key="recipe.slug"
+      >
+        <h2>{{ recipe.title }}</h2>
+        <p>{{ recipe.description }}</p>
+        <router-link :to="`/recipte/${recipe.slug}`">
+          <button>Voir la recette</button>
+        </router-link>
+      </div>
     </div>
-
-  </div>
-  <div class="add-recipe-popup" v-if ='popupOpen'>
-    <div class="popup-content">
-      <h2>Ajouter une nouvelle recette</h2>
-      <form @submit.prevent="">
-        <div class="group">
-          <label> Titre</label>
-          <input type="text"/>
-        </div>
-        <div class="group">
-          <label> Description</label>
-          <textarea ></textarea>
-        </div>
-         <div class="group">
-          <label> Ingrédients</label>
-          <div class="ingredient">
-            <input type="text"/>
+    <div class="add-recipe-popup" v-if="popupOpen">
+      <div class="popup-content">
+        <h2>Ajouter une nouvelle recette</h2>
+        <form @submit.prevent="">
+          <div class="group">
+            <label> Titre</label>
+            <input type="text" />
           </div>
-        <button type="button">Ajouter ingrédient</button>
-        </div>
-        <div class="group">
-          <label> Méthode</label>
-          <div class="method">
-             <textarea ></textarea>
+          <div class="group">
+            <label> Description</label>
+            <textarea></textarea>
           </div>
-        <button type="button">Ajouter une étape</button>
-
-        </div>
-        <button type="submit">Ajouter la recette</button>
-        <button type="button" @click="togglePopup">Fermer</button>
-      </form>
+          <div class="group">
+            <label> Ingrédients</label>
+            <div
+              class="ingredient"
+              v-for="i in newRecipe.ingredientRows"
+              :key="i"
+            >
+              <input type="text" v-model="newRecipe.ingredients" />
+            </div>
+            <button type="button" @click="addNewIngredient">Ajouter ingrédient</button>
+          </div>
+          <div class="group">
+            <label> Méthode</label>
+            <div class="method"  v-for="i in newRecipe.methodRows"
+              :key="i">
+              <textarea v-model="newRecipe.method"></textarea>
+            </div>
+            <button type="button" @click="addNewStep">Ajouter une étape</button>
+          </div>
+          <button type="submit">Ajouter la recette</button>
+          <button type="button" @click="togglePopup">Fermer</button>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
-import {ref} from 'vue';
+import { ref } from "vue";
+// import {useStore} from 'vuex';
 export default {
   name: "Home",
-  setup(){
+  setup() {
     const newRecipe = ref({
-      title:'',
-      description:'',
-      ingredient:'',
+      title: "",
+      description: "",
+      ingredient: "",
       method: [],
       ingredientRows: 1,
-      methodRows: 1
-
+      methodRows: 1,
     });
     const popupOpen = ref(false);
     const togglePopup = () => {
       popupOpen.value = !popupOpen.value;
-    }
+    };
+
+    const addNewIngredient = () => {
+      newRecipe.value.ingredientRows++;
+    };
+    const addNewStep = () => {
+      newRecipe.value.methodRows++;
+    };
+
     return {
       newRecipe,
       togglePopup,
-      popupOpen
-    }
-  }
+      popupOpen,
+      addNewIngredient,
+      addNewStep,
+    };
+  },
 };
 </script>
 

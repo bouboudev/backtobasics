@@ -29,7 +29,7 @@
           </div>
 
           <div class="group">
-            <label>Ingredients</label>
+            <label>Ingrédients</label>
             <div class="ingredient" v-for="i in newRecipe.ingredientRows" :key="i">
               <input type="text" v-model="newRecipe.ingredients[i - 1]" />
             </div>
@@ -37,7 +37,7 @@
           </div>
 
           <div class="group">
-            <label>Method</label>
+            <label>Méthode</label>
             <div class="method" v-for="i in newRecipe.methodRows" :key="i">
               <textarea v-model="newRecipe.method[i - 1]"></textarea>
             </div>

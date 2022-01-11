@@ -2,50 +2,48 @@
   <div class="home">
     <h1>Mes recettes</h1>
     <button @click="togglePopup">Ajouter une nouvelle recette</button>
+
     <div class="recipes">
-      <div
-        class="card"
-        v-for="recipe in $store.state.recipes"
-        :key="recipe.slug"
-      >
+      <div class="card" v-for="recipe in $store.state.recipes" :key="recipe.slug">
         <h2>{{ recipe.title }}</h2>
         <p>{{ recipe.description }}</p>
-        <router-link :to="`/recipte/${recipe.slug}`">
+        <router-link :to="`/recipe/${recipe.slug}`">
           <button>Voir la recette</button>
         </router-link>
       </div>
     </div>
+
     <div class="add-recipe-popup" v-if="popupOpen">
       <div class="popup-content">
         <h2>Ajouter une nouvelle recette</h2>
-        <form @submit.prevent="">
+
+        <form @submit.prevent="addNewRecipe">
           <div class="group">
-            <label> Titre</label>
-            <input type="text" />
+            <label>Titre</label>
+            <input type="text" v-model="newRecipe.title" />
           </div>
+
           <div class="group">
-            <label> Description</label>
-            <textarea></textarea>
+            <label>Description</label>
+            <textarea v-model="newRecipe.description"></textarea>
           </div>
+
           <div class="group">
-            <label> Ingrédients</label>
-            <div
-              class="ingredient"
-              v-for="i in newRecipe.ingredientRows"
-              :key="i"
-            >
-              <input type="text" v-model="newRecipe.ingredients" />
+            <label>Ingredients</label>
+            <div class="ingredient" v-for="i in newRecipe.ingredientRows" :key="i">
+              <input type="text" v-model="newRecipe.ingredients[i - 1]" />
             </div>
-            <button type="button" @click="addNewIngredient">Ajouter ingrédient</button>
+            <button type="button" @click="addNewIngredient">Ajouter un ingrédient</button>
           </div>
+
           <div class="group">
-            <label> Méthode</label>
-            <div class="method"  v-for="i in newRecipe.methodRows"
-              :key="i">
-              <textarea v-model="newRecipe.method"></textarea>
+            <label>Method</label>
+            <div class="method" v-for="i in newRecipe.methodRows" :key="i">
+              <textarea v-model="newRecipe.method[i - 1]"></textarea>
             </div>
             <button type="button" @click="addNewStep">Ajouter une étape</button>
           </div>
+
           <button type="submit">Ajouter la recette</button>
           <button type="button" @click="togglePopup">Fermer</button>
         </form>
@@ -55,40 +53,60 @@
 </template>
 
 <script>
-import { ref } from "vue";
-// import {useStore} from 'vuex';
+import { ref } from 'vue';
+import { useStore } from 'vuex';
 export default {
-  name: "Home",
-  setup() {
+  name: 'Home',
+  setup () {
     const newRecipe = ref({
-      title: "",
-      description: "",
-      ingredient: "",
+      title: '',
+      description: '',
+      ingredients: [],
       method: [],
       ingredientRows: 1,
-      methodRows: 1,
+      methodRows: 1
     });
     const popupOpen = ref(false);
+    const store = useStore();
     const togglePopup = () => {
       popupOpen.value = !popupOpen.value;
-    };
-
+    }
     const addNewIngredient = () => {
       newRecipe.value.ingredientRows++;
-    };
+    }
+    
     const addNewStep = () => {
       newRecipe.value.methodRows++;
-    };
-
+    }
+    
+    const addNewRecipe = () => {
+      newRecipe.value.slug = newRecipe.value.title.toLowerCase().replace(/\s/g, '-');
+      if (!newRecipe.value.slug) {
+        alert("Please enter a title");
+        return;
+      }
+      store.commit('ADD_RECIPE', { ...newRecipe.value });
+      newRecipe.value = {
+        title: '',
+        description: '',
+        ingredients: [],
+        method: [],
+        ingredientRows: 1,
+        methodRows: 1
+      };
+      togglePopup();
+    }
+    
     return {
       newRecipe,
+      addNewRecipe,
       togglePopup,
       popupOpen,
-      addNewIngredient,
       addNewStep,
-    };
-  },
-};
+      addNewIngredient,
+    }
+  }
+}
 </script>
 
 <style>

@@ -17,7 +17,7 @@ body {
   color: #FFF;
 }
 a {
-  color: #2aeb74;
+  color: #6c5ce7;
   text-decoration: none;
 }
 button {

@@ -101,9 +101,6 @@ npm run lint
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### CODESANDBOX
-https://8vc9x.csb.app
-
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

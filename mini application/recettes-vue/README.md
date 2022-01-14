@@ -9,10 +9,10 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Faq accordion </h>
+  <h2 align="center">Recette in Vue.js </h>
 
   <p align="center">
-   this is an accordion faq !
+   this is a recipe form !
     <br />
    
   </p>
@@ -47,7 +47,8 @@
 <br />
 <br />
 
-The goal of the project was to create a faq that opens like an accordion when you click on a question.
+
+The goal of the project was to create a form to create recipes and save them with the  javascript framework Vue.js .
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

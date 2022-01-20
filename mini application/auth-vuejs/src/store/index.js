@@ -89,6 +89,7 @@ export default createStore({
 
     fetchUser ({ commit }) {
       auth.onAuthStateChanged(async user => {
+        // si l'user est egale a null on le deconnecte
         if (user === null) {
           commit('CLEAR_USER')
         } else {

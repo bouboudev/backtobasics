@@ -1,25 +1,31 @@
 <template>
-  <div id="nav">
+<!-- visible que si nous sommes connecté -->
+  <div id="nav" v-if="$store.state.user">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+     <button @click="$store.dispatch('logout')">Logout</button>
   </div>
   <router-view/>
 </template>
 
 
 <script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
+import { onBeforeMount } from 'vue'
+import { useStore } from 'vuex'
+export default {
   setup() {
-    
-  },
-})
+    // recuperer l'utilisateur
+    const store = useStore()
+    onBeforeMount(() => {
+      store.dispatch('fetchUser')
+    })
+  }
+}
 </script>
 
 
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,16 +37,13 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
 }
-
 #nav {
   padding: 30px;
 }
-
 #nav a {
   font-weight: bold;
   color: #2c3e50;
 }
-
 #nav a.router-link-exact-active {
   color: #42b983;
 }

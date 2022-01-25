@@ -34,7 +34,7 @@ export default createStore({
             alert("Utilisateur non trouvé.")
             break
           case 'auth/wrong-password':
-            alert("Mauvais mot de passe.")
+            alert("Mot de passe incorrect.")
             break
           default:
             alert("Quelques choses est incorecte.")

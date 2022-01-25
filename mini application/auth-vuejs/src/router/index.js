@@ -10,7 +10,7 @@ const routes = [
     component: Home,
     meta: {
       // être authentifié pour acceder à home
-      requireAuth: true,
+      requiresAuth: true,
     },
   },
   {
@@ -19,7 +19,7 @@ const routes = [
     component: () => import("../views/About.vue"),
     meta: {
       // être authentifié pour acceder à home
-      requireAuth: true,
+      requiresAuth: true,
     },
   },
   {

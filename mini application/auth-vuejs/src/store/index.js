@@ -37,7 +37,7 @@ export default createStore({
             alert("Mauvais mot de passe.")
             break
           default:
-            alert("quelques choses est incorecte.")
+            alert("Quelques choses est incorecte.")
         }
 
         return
@@ -56,19 +56,19 @@ export default createStore({
       } catch (error) {
         switch(error.code) {
           case 'auth/email-already-in-use':
-            alert("Email already in use")
+            alert("Email déjà utilisé")
             break
           case 'auth/invalid-email':
-            alert("Invalid email")
+            alert("Email invalid")
             break
           case 'auth/operation-not-allowed':
-            alert("Operation not allowed")
+            alert("Opération non autorisée")
             break
           case 'auth/weak-password':
-            alert("Weak password")
+            alert("Mot de passe faible")
             break
           default:
-            alert("Something went wrong")
+            alert("Quelques choses est incorecte")
         }
 
         return

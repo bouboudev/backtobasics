@@ -2,32 +2,32 @@
   <main class="login">
     <section class="forms">
       <form class="register" @submit.prevent="register">
-        <h2>Register</h2>
+        <h2>Inscription</h2>
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="Email"
           v-model="register_form.email"
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Mot de passe"
           v-model="register_form.password"
         />
-        <input type="submit" value="Register" />
+        <input type="submit" value="s'inscrire" />
       </form>
       <form class="login"  @submit.prevent="login">
-        <h2>Login</h2>
+        <h2>Connexion</h2>
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="Email"
           v-model="login_form.email"
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Mot de passe"
           v-model="login_form.password"
         />
-        <input type="submit" value="Login" />
+        <input type="submit" value="Se connecter" />
       </form>
     </section>
   </main>

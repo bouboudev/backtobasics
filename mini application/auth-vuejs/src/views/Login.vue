@@ -60,6 +60,13 @@ export default {
 </script>
 
 <style>
+
+
+:root {
+  --couleur-principale: #ff793f;
+  --couleur-secondaire: #e64c0a;
+  
+}
 .forms {
 	display: flex;
 	min-height: 100vh;
@@ -70,11 +77,11 @@ form {
 }
 form.register {
 	color: #FFF;
-	background-color: rgb(245, 66, 101);
+	background-color: var(--couleur-principale);
 	background-image: linear-gradient(
 		to bottom right,
-		rgb(245, 66, 101) 0%,
-		rgb(189, 28, 60) 100%
+		var(--couleur-principale) 0%,
+		var(--couleur-secondaire) 100%
 	);
 }
 h2 {
@@ -114,7 +121,7 @@ form.login input:not([type="submit"]) {
 	border-bottom: 2px solid #2c3e50;
 }
 form.login input[type="submit"] {
-	background-color: rgb(245, 66, 101);
+	background-color: var(--couleur-principale);
 	color: #FFF;
 	font-weight: 700;
 	padding: 1rem 2rem;
@@ -124,7 +131,7 @@ form.login input[type="submit"] {
 }
 form.register input[type="submit"] {
 	background-color: #FFF;
-	color: rgb(245, 66, 101);
+	color: var(--couleur-principale);
 	font-weight: 700;
 	padding: 1rem 2rem;
 	border-radius: 0.5rem;

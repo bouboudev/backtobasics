@@ -57,7 +57,7 @@ export default createStore({
             alert("Email déjà utilisé");
             break;
           case "auth/invalid-email":
-            alert("Email invalid");
+            alert("Email invalide");
             break;
           case "auth/operation-not-allowed":
             alert("Opération non autorisée");

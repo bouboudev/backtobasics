@@ -1,28 +1,26 @@
 <template>
-<!-- visible que si nous sommes connecté -->
+  <!-- visible que si nous sommes connecté -->
   <div id="nav" v-if="$store.state.user">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-     <button @click="$store.dispatch('logout')">Logout</button>
+    <button @click="$store.dispatch('logout')">Logout</button>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
-
 <script>
-import { onBeforeMount } from 'vue'
-import { useStore } from 'vuex'
+import { onBeforeMount } from "vue";
+import { useStore } from "vuex";
 export default {
   setup() {
     // recuperer l'utilisateur
-    const store = useStore()
+    const store = useStore();
     onBeforeMount(() => {
-      store.dispatch('fetchUser')
-    })
-  }
-}
+      store.dispatch("fetchUser");
+    });
+  },
+};
 </script>
-
 
 <style>
 * {

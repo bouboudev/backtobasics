@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Login from '../views/Login.vue'
-import { auth } from '../firebase'
+import Login from "../views/Login.vue";
+import { auth } from "../firebase";
 
 const routes = [
   {
@@ -36,18 +36,21 @@ const router = createRouter({
 
 // verifier si l'utilisateur est connecté puis l'envoyer à home
 router.beforeEach((to, from, next) => {
-  if (to.path === '/login' && auth.currentUser) {
-    next('/')
+  if (to.path === "/login" && auth.currentUser) {
+    next("/");
     return;
   }
 
   // verifier si l'utilisateur est connecté sinon l'envoyé à login
-  if (to.matched.some(record => record.meta.requiresAuth) && !auth.currentUser) {
-    next('/login')
+  if (
+    to.matched.some((record) => record.meta.requiresAuth) &&
+    !auth.currentUser
+  ) {
+    next("/login");
     return;
   }
 
   next();
-})
+});
 
 export default router;

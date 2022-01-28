@@ -9,10 +9,10 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  <h2 align="center">Electric Chat</h>
+  <h2 align="center">authentification in Vue.js and Firebase</h>
 
   <p align="center">
-   this is an Electric Chat with firebase !
+   this is an authentification in Vue.js and Firebase!
     <br />
    
   </p>

@@ -47,7 +47,7 @@
 <br />
 <br />
 
-The goal of the project was to create a mini instant chat application. Give the user the possibility to quickly register with his nickname and to communicate with other users, using the Vue.js javascript framework and the google firebase application.
+The goal of the project was to create a mini authentication application using the javascript framework Vue.js and the google firebase application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
